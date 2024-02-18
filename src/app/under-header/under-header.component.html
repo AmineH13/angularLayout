@@ -1,18 +1,11 @@
-<div class="container" >
-    <h1 class="archivo-black-regular"> {{ titre }}</h1>
-
-    <div class="menu" >
-        <button type="button" class="menu-item cairo-items" [class.active]="activeTab === 'users'" (click)="selectTab('users')">Utilisateurs</button>
-        <button type="button " class="menu-item cairo-items" [class.active]="activeTab === 'admin'" (click)="selectTab('admin')">Administateurs</button>
-        <button type="button " class="menu-item cairo-items" [class.active]="activeTab === 'admin-soc'" (click)="selectTab('admin-soc')">Administateurs société</button>
-      </div>
-       
+<div class="container">
+  <h1 class="archivo-black-regular"> {{ titre }}</h1>
+  <div class="menu">
+    <button type="button" class="menu-item cairo-items" [class.active]="activeTab === 'users'"
+      (click)="selectTab('users')">Utilisateurs</button>
+    <button type="button " class="menu-item cairo-items" [class.active]="activeTab === 'admin'"
+      (click)="selectTab('admin')">Administateurs</button>
+    <button type="button " class="menu-item cairo-items" [class.active]="activeTab === 'admin-soc'"
+      (click)="selectTab('admin-soc')">Administateurs société</button>
   </div>
-      
-      
-  <div class="content-below-menu">
-    <app-filters></app-filters>
-    <app-lame-vue></app-lame-vue>
-  </div>  
-
-  
+</div>

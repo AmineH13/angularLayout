@@ -1,5 +1,11 @@
-.archivo-black-regular {
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.container{
+ display: flex;
+ justify-content: end;
+ height: calc(100% - 130px);
+}
+
+.content{
+  height: 100%;
+  width: calc(100% - 19rem);
+  margin: .5rem;
+}

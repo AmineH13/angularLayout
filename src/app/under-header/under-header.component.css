@@ -1,11 +1,8 @@
 .container {
     display: flex;
     justify-content: center;
-    height: 100vh;
-    background-color: white;
-    margin-bottom: 20px; 
-    margin-left: 15%;
-    
+    flex-direction: column;
+    height: 10rem;
   }
   
   h1 {
@@ -28,9 +25,9 @@
   
   .menu {
     display: flex;
-    position: absolute;
-    top: 28%; /* Place le menu en dessous du titre */
-    left: 32%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
   }
   
   .menu-item {
@@ -41,8 +38,7 @@
     cursor: pointer;
     position: relative;
     border-bottom: 2px solid transparent; 
-    margin-right: 70%;
-    white-space: nowrap;
+    flex: 1 1 33%;
   }
   
   .menu-item.active {

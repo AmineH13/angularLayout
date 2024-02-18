@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {InputTextModule} from 'primeng/inputtext';
+import {DropdownModule} from 'primeng/dropdown';
+import {ButtonModule} from 'primeng/button';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +26,10 @@ import { FiltersComponent } from './filters/filters.component';
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
-    TabMenuModule
+    TabMenuModule,
+    InputTextModule,
+    DropdownModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
