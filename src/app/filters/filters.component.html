@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="input-row row">
+    <!-- Ligne 1 -->
+    <div class="line1-elements">
+      <input type="text" placeholder="Nom, email, identifiant, n° de téléphone" class="input-field">
+      <button class="search-button"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+
+  <div class="input-row row">
+    <!-- Ligne 2 -->
+    <div class="line2-elements">
+      <div class="button-group">
+        <button class="btn btn-lang cairo-items" (click)="togglePerimetreDropdown()">
+          {{ selectedPerimetre }}  &nbsp; <i class="fas fa-angle-down"></i> 
+        </button>
+        <ul class="dropdown-menu cairo-items" *ngIf="showPerimetreDropdown">
+          <li *ngFor="let item of perimetres" (click)="selectPerimetre(item)">{{ item }}</li>
+        </ul>
+      </div>
+
+      <div class="button-group">
+        <button class="btn btn-lang cairo-items" (click)="toggleHabilitationDropdown()">
+          {{ selectedHabilitation }}  &nbsp; <i class="fas fa-angle-down"></i> 
+        </button>
+        <ul class="dropdown-menu cairo-items" *ngIf="showHabilitationDropdown">
+          <li *ngFor="let item of habilitations" (click)="selectHabilitation(item)">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<!-- navbar.component.html -->
+<nav class="navbar">
+    <div class="navbar-menu">
+        <div class="menu-button-group">
+  
+            <button class="btn btn-menu cairo-nav" (click)="toggleMenuDropdown()">
+                menu 
+            </button>
+            
+          <ul class="menu-dropdown cairo-items" *ngIf="showMenuDropdown">
+            <li *ngFor="let item of menu" (click)="selectItem(item)">{{ item }}</li>
+          </ul>
+        </div>
+    </div>
+    <div class="navbar-brand archivo-black-regular">
+      Espace Client <span style="color: #e2001a;"> Société CHU de Lilles</span>
+    </div>
+    <div class="navbar-menu">
+
+
+
+
+        <button class="btn btn-lang cairo-items" (click)="navigateVosCommandes()">
+            vos commandes
+         </button>
+ 
+         <div class="vertical-line"></div>
+
+
+        <button class="btn btn-lang cairo-items" (click)="navigateVosCompteEspaceClient()">
+           vos compte espace client
+        </button>
+
+        <div class="vertical-line"></div>
+
+
+      <div class="button-group">
+        <button class="btn btn-lang cairo-items" (click)="toggleTestDropdown()">
+          {{ selectedTest }}  &nbsp; <i class="fas fa-angle-down"></i> 
+        </button>
+        <ul class="dropdown-menu cairo-items" *ngIf="showTestDropdown">
+          <li *ngFor="let test of tests" (click)="selectTest(test)">{{ test }}</li>
+        </ul>
+      </div>
+  
+      <div class="vertical-line"></div>
+  
+      <div class="button-group">
+        <button class="btn btn-lang cairo-items" (click)="toggleLanguageDropdown()">
+          {{ selectedLanguage }}  &nbsp; <i class="fas fa-angle-down"></i> 
+        </button>
+        <ul class="dropdown-menu cairo-items" *ngIf="showLanguageDropdown">
+          <li *ngFor="let lang of languages" (click)="selectLanguage(lang)">{{ lang }}</li>
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  

@@ -1,0 +1,38 @@
+<div *ngFor="let utilisateur of utilisateurs" class="card">
+  <div class="card-header">
+    <h2 class="archivo-black-regular">{{ utilisateur.nom }}</h2>
+  </div>
+  <div class="card-body">
+    <div class="info">
+      <p>Email: {{ utilisateur.email }}</p>
+      <p>Identifiant: {{ utilisateur.identifiant }}</p>
+      <p>Téléphone: {{ utilisateur.telephone }}</p>
+    </div>
+    <div class="info">
+      <p>Restriction de périmètre: {{ utilisateur.restrictionPerimetre }}</p>
+      <p>Restriction habilitation: {{ utilisateur.restrictionHabilitation }}</p>
+      <p>Créé par: {{ utilisateur.creePar }}</p>
+      <p>Date de création: {{ utilisateur.dateCreation }}</p>
+    </div>
+    <div class="actions">
+      <p>Dernière connexion: {{ utilisateur.derniereConnexion }}</p>
+      <br>
+      <div class="button-container">
+        <strong>Voir les activités</strong>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="button-container">
+        <strong>Modifier</strong>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="button-container">
+        <strong>Dupliquer</strong>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="button-container">
+        <strong>Supprimer</strong>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+</div>

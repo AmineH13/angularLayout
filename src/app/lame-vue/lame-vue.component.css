@@ -1,0 +1,61 @@
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 70%; /* Augmentation de la largeur */
+    width: 100%; /* Pour s'assurer que la carte occupe toute la largeur disponible */
+  }
+  
+  .card-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  .button-container strong {
+    margin-right: 10px;
+  }
+  
+
+
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  p {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 100%;
+  }
+
+
+  strong{
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    
+  }

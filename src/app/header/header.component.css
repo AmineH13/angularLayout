@@ -1,0 +1,145 @@
+/* navbar.component.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFF;
+    padding: 10px;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-family: Archivo;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button-group {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: white;
+    min-width: 120px;
+    border: 1px solid black;
+    border-radius: 4px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color:  #f0f0f0;;
+  }
+  
+  .vertical-line {
+    height: 20px; 
+    width: 1px; 
+    background-color: #ccc; 
+    margin: 0 10px; 
+  }
+  
+  .btn-lang {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+
+.menu-button-group {
+    position: relative;
+  }
+
+
+  .btn-menu i {
+    margin-right: 5px; 
+  }
+  
+  .btn-menu {
+    background-color: #e2001a; 
+    color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 30px 40px;
+    width: 200%; 
+    text-align: left; 
+    position: relative; 
+    left: 30%;
+    transform: translateY(60%); 
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: calc(100% - 1px); 
+    left: 0;
+    background-color: white; 
+    min-width: 100%;
+    border: 1px solid #ccc; 
+    border-top: none; 
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    list-style-type: none;
+    padding: 0;
+    left: 30%;
+    margin: 0;
+    width: 198%; 
+    transform: translateY(11%); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .menu-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-dropdown li:hover {
+    background-color: #f0f0f0; 
+  }
+  
+
+  .archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .cairo-nav {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 100%;
+  }
+
+  .cairo-items {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 100%;
+  }
